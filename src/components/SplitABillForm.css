@@ -1,0 +1,8 @@
+.splitForm {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: end;
+}
