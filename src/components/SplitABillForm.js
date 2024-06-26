@@ -2,8 +2,8 @@ import { useState } from "react";
 import "./SplitABillForm.css";
 
 function SplitABillForm({ friend, onUpdateFriend }) {
-  const [bill, setBill] = useState(null);
-  const [myExpense, setMyExpense] = useState(null);
+  const [bill, setBill] = useState('');
+  const [myExpense, setMyExpense] = useState('');
   const myFriendExpense = bill - myExpense;
   const [whoPays, setWhoPays] = useState("you");
 
@@ -28,7 +28,7 @@ function SplitABillForm({ friend, onUpdateFriend }) {
   return (
     <div className="splitForm">
       <h3>SPLIT A BILL WITH {friend.name.toUpperCase()}</h3>
-      <div className="splitForm">
+      <div className=" content">
         <div>
           <label>Bill value</label>
           <input

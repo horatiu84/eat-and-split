@@ -1,11 +1,11 @@
 import { useState } from "react";
+import './addFriendForm.css'
 function AddFriendForm({ onToggleAdd, handleAddFriend }) {
   const [name, setName] = useState("");
 
   const rand = Math.floor(Math.random() * 1000);
   const imgUrl = `https://i.pravatar.cc/${rand}`;
-  const description = `You and ${name} are even`;
-
+  
   function handleSubmit(e) {
     e.preventDefault();
     if (!name) return;
@@ -14,8 +14,8 @@ function AddFriendForm({ onToggleAdd, handleAddFriend }) {
     onToggleAdd();
   }
   return (
-    <div>
-      <form>
+    <div className="addFriend" >
+      <form className="addFriendForm">
         <div>
           <label>Friend name</label>
           <input

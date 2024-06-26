@@ -8,19 +8,19 @@ const friends = [
   {
     name: "Clark",
     photo:
-      "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://i.pravatar.cc/115",
     amount: -7,
   },
   {
     name: "Sarah",
     photo:
-      "https://media.meer.com/attachments/fab1026dcd503986811212d6bf4f44b28551991c/store/fill/860/645/95695d4e4c4394fb92cc829a02c7b4ed57dae7e1d0e9a5c2cf9600084c5e/A-bright-woman.jpg",
+    "https://i.pravatar.cc/116",
     amount: 20,
   },
   {
     name: "Anthony",
     photo:
-      "https://img.freepik.com/free-photo/handsome-bearded-guy-posing-against-white-wall_273609-20597.jpg?size=626&ext=jpg&ga=GA1.1.1141335507.1718150400&semt=sph",
+    "https://i.pravatar.cc/117",
     amount: 0,
   },
 ];
@@ -46,7 +46,7 @@ function FriendList() {
   }
   return (
     <div className="app">
-      <div>
+      <div className="appContent">
         {data.map((friend, i) => {
           return (
             <Friend

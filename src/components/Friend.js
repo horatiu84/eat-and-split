@@ -7,11 +7,11 @@ function Friend({ onCurSelect, name, photo, curSelected, num, amount }) {
   }
   return (
     <>
-      <div className="friend">
+      <div className={ isSelected ? "friend friendBackground" : "friend"}>
         <img src={photo} alt={name} />
-        <div>
+        <div className="friendDescription">
           <h4>{name}</h4>
-          <p>
+          <p className={amount === 0 ? 'even' : amount > 0 ? 'heOwns' : 'iOwn'}>
             {amount === 0
               ? `You and ${name} are even`
               : amount > 0

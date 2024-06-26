@@ -1,4 +1,5 @@
 import FriendList from "./components/FriendList";
+import "./app.css";
 
 function App() {
   return (
