@@ -1,28 +1,39 @@
 .addFriendForm {
-    background-color: bisque;
-    border-radius: 1rem;
-    padding: 1.5rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
-    gap: 0.5rem;
-    margin: 1.0rem 0.5rem ;
-    width: 100%;
-    box-sizing: border-box;
+  background-color: bisque;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  margin: 0.5rem 0.5rem;
+  padding: 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
 }
 
 .addFriendForm div {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.addFriendForm input {
+  max-width: 150px;
+}
+
+.addFriendForm button {
+  width: 160px;
 }
 
 .addFriend {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-left: 1rem;
 }
 
 .addFriend > button {
-    margin-right: 0.5rem;
+  margin-right: 0.5rem;
 }
-

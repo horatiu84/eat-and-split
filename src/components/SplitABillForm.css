@@ -1,26 +1,40 @@
 .splitForm {
-    background-color: bisque;
-    margin-bottom: 0.5rem;
-    border-radius: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 2rem;
-    padding: 1rem 4rem;
-    align-items: center;
-    width: auto;
+  background-color: bisque;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 2rem;
+  padding: 1rem 3rem;
+  align-items: center;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 1rem;
+  width: 280px;
+}
+
+.content div {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content input {
+  width: 80px;
+}
+
+.content select {
+  width: 90px;
 }
 
 button {
-    background-color: rgb(244, 161, 102);
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
-    font-weight: bold;
+  background-color: rgb(244, 161, 102);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
 }
